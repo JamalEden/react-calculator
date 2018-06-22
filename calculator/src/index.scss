@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+$skyblue: #87ceeb;
+$black: #363738;
+$tomato: #ff6347;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: #212f3e;
+}
+
+
+.app{
+ width: 300px;
+ height: 400px;
+ margin-top: 50px;
+ position: relative;
+}
+
+.Display{
+  height: 20%;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 15px;
+  border: 1px solid $skyblue;
+  background-color: $skyblue;
+  color: $tomato;
+  border-radius: 6px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 35px;
+}
+.Buttons{
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 2%;
+}
+.Button{
+  width: 24%;
+  display: flex;
+  justify-content: space-around;
+  height: 19%;
+  box-sizing: border-box;
+  
+  
+  &:nth-child(17){
+    height: 38%;
+    margin-bottom: 4px;
+  }
+  &:nth-child(18){
+    height: 38%;
+    margin-bottom: 4px;
+  }
+  &:nth-child(15){
+    visibility: hidden;
+  }
+  &:hover{
+    cursor: pointer;
+    
+  }
+}
+.Buttons button{
+  border: none;
+  background-color: transparent;
+  color: $skyblue;
+  clear: both;
+  margin-bottom: 2px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-family: 'Titillium Web', sans-serif;
+  &:hover{
+    background-color:$skyblue;
+    color: #fff;
+    transition-duration: .4s;
+    border: 1px solid greenyellow;
+    font-size: 30px;
+    border: 1px solid $skyblue;
+    color: $tomato;
+  }
+}
